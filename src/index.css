@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #e8eef8; background: #08111f; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 75% 10%, #15345a 0%, transparent 42%), #08111f; }
+button { font: inherit; }
+.page { max-width: 1120px; margin: 0 auto; padding: 28px 32px 24px; min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { display: flex; align-items: center; gap: 13px; }
+.brand-mark { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; background: linear-gradient(135deg,#38bdf8,#6366f1); color: white; font-weight: 800; }
+.brand-name { font-weight: 800; letter-spacing: .12em; font-size: 16px; }
+.brand-subtitle { color: #8da4c3; font-size: 9px; letter-spacing: .13em; margin-top: 3px; }
+.hero { width: 100%; max-width: 850px; margin: auto; padding: 76px 0 64px; }
+.eyebrow { color: #67d4f5; font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+h1 { font-size: clamp(38px, 6vw, 66px); line-height: 1.12; letter-spacing: -.045em; margin: 20px 0; }
+h1 span { color: #65c9f2; }
+.intro { color: #a9bad0; font-size: 16px; line-height: 1.8; max-width: 650px; margin-bottom: 34px; }
+.role-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.role-card { text-align: left; border: 1px solid #29415e; background: #101e31; color: #e8eef8; padding: 25px; border-radius: 18px; cursor: pointer; display: flex; flex-direction: column; min-height: 205px; transition: .2s ease; }
+.role-card:hover { transform: translateY(-3px); border-color: #55bde8; background: #142943; }
+.role-icon { color: #67d4f5; font-size: 25px; margin-bottom: 20px; }
+.role-title { font-size: 20px; font-weight: 700; }
+.role-desc { color: #9eb0c7; font-size: 13px; line-height: 1.6; margin-top: 8px; }
+.role-action { color: #67d4f5; font-size: 12px; font-weight: 700; margin-top: auto; padding-top: 20px; }
+.notice { margin-top: 20px; padding: 14px 16px; border: 1px solid #35617a; border-radius: 12px; background: #10283b; color: #c8eafa; font-size: 13px; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.notice button { border: 0; background: transparent; color: #67d4f5; cursor: pointer; }
+footer { color: #647b98; font-size: 11px; text-align: center; padding-top: 20px; border-top: 1px solid #1c2d43; }
+@media (max-width: 640px) { .page { padding: 22px 18px; } .hero { padding: 60px 0 40px; } .role-grid { grid-template-columns: 1fr; } }
